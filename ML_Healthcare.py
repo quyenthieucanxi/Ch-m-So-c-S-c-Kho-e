@@ -107,7 +107,7 @@ def add_parameter_ui(clf_name):
     elif clf_name == "Decision Trees":
         M = st.sidebar.slider("max_depth", 2, 20)
         C = st.sidebar.selectbox("Criterion", ("gini", "entropy"))
-        SS = st.sidebar.slider("min_samples_split",1,10)
+        SS = st.sidebar.slider("min_samples_split",2,10)
         params["M"] = M
         params["C"] = C
         params["SS"] = SS
