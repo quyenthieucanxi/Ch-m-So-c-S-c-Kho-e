@@ -148,7 +148,7 @@ def get_classifier(clf_name,params):
         clf = SVC(kernel=params["kernel"],C=params["C"])
 
     elif clf_name == "Decision Trees":
-        clf = DecisionTreeClassifier(max_depth=params["M"],criterion=params["C"],min_impurity_split=params["SS"])
+        clf = DecisionTreeClassifier(max_depth=params["M"],criterion=params["C"],min_samples_split=params["SS"])
 
     elif clf_name == "Random Forest":
         clf = RandomForestClassifier(n_estimators=params["N"],max_depth=params["M"],criterion=params["C"])
