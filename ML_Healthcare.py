@@ -260,7 +260,6 @@ with st.expander("Chi tiết"):
 
 user_val=user_inputs_ui(dataset_name,data)
 
-#@st.cache(suppress_st_warning=True)
 def user_predict():
     global U_pred
     if dataset_name == "Ung thư vú":
@@ -280,4 +279,4 @@ def user_predict():
 user_predict()  #Predict the status of user.
 
 
-#-------------------------------------------------------------------------END------------------------------------------------------------------------#
+
